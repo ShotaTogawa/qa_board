@@ -14,8 +14,8 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        $questions = Question::latest()->paginate(5);
-
+        $questions = Question::with('user')->latest()->paginate(10);
+        //compactは$questions変数をquesitons/index.blade.phpに受け渡す。
         return view('questions.index', compact('questions'));
     }
 

@@ -19,3 +19,6 @@ factory(App\User::class, 3)->create()->each(function($u) {
               );
         });
 ```
+
+####controllerからview
+[controllerからviewへの変数の受け渡し](https://qiita.com/ryo2132/items/63ced19601b3fa30e6de)
