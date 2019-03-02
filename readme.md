@@ -22,3 +22,12 @@ factory(App\User::class, 3)->create()->each(function($u) {
 
 ####controllerからview
 [controllerからviewへの変数の受け渡し](https://qiita.com/ryo2132/items/63ced19601b3fa30e6de)
+
+
+ ## Answers Table Schema
+ ・id  
+ ・user_id  
+ ・question_id  
+ ・body  
+ ・votes_control  
+ ・created_at, updated_at
