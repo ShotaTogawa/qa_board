@@ -31,3 +31,8 @@ factory(App\User::class, 3)->create()->each(function($u) {
  ・body  
  ・votes_control  
  ・created_at, updated_at
+
+ ### テストデータの作り方
+・Factoryの作成  
+ `php artisan make:factory AnswerFactory`  
+ 
