@@ -23,3 +23,4 @@ Route::resource('question', 'QuestionsController')->except('show');
 //Route::post('/question/{question}/answers', 'AnswersController@store')->name('answers.store');
 Route::resource('question.answers', 'AnswersController')->only(['store', 'edit', 'update', 'destroy']);
 Route::get('/question/{slug}', 'QuestionsController@show')->name('question.show');
+Route::post('/answers/{answer}/accept', 'AcceptAnswerController')->name('answers.accept');
