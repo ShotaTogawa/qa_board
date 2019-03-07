@@ -7,6 +7,6 @@ $factory->define(App\Answer::class, function (Faker $faker) {
         'body' => $faker->paragraphs(rand(3,7), true),
         //ユーザーモデルに格納されているIDからランダムに一つ取得する
         'user_id' => App\User::pluck('id')->random(),
-        'votes' => rand(0,5),
+        // 'votes' => rand(0,5),
     ];
 });
